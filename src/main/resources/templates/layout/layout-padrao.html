@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Página Padrão</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link th:href="@{/vendor/css/bootstrap.min.css}" rel="stylesheet">
+
+    <script th:src="@{/vendor/js/jquery-3.4.1.min.js}"></script>
+    <script th:src="@{/vendor/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+
+    <header th:replace="layout/header :: header"></header>
+
+    <div class="container">
+        <div layout:fragment="content">
+
+        </div>
+    </div>
+
+    <footer th:fragment="layout/footer :: footer" class="text-center">&copy; 2017 Default Footer</footer>
+</body>
+</html>
