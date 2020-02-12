@@ -23,7 +23,7 @@
 
     <properties>
         <projject.build.sourceEncoding>UTF-8</projject.build.sourceEncoding>
-        <env.catalina_home>C:\server\apache-tomcat-8.5.37</env.catalina_home>
+        <env.catalina_home>/usr/local/apache-tomcat-8.5.50</env.catalina_home>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.war.version>3.2.3</maven.war.version>
         <java.version>1.8</java.version>
@@ -169,6 +169,9 @@
                             <artifactId>${project.artifactId}</artifactId>
                             <type>war</type>
                             <properties>
+                                <cargo.hostname>192.168.0.103</cargo.hostname>
+                                <cargo.remote.username>admin</cargo.remote.username>
+                                <cargo.remote.password>admin</cargo.remote.password>
                                 <context>${project.build.finalName}</context>
                             </properties>
                         </deployable>
